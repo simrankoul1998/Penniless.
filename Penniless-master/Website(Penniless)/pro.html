@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+/*.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}*/
+
+  #p2 { 
+      text-indent: 12px; margin: 0%; margin-top: 0%; margin-bottom: 0% 
+    }
+
+p{
+  margin:0;
+  padding:0;
+  line-height:20px;
+
+  }
+
+
+h2.a {
+    visibility: visible;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+/* image ka positioning*/
+.container {
+    position: relative;
+    max-width: 1400px;
+    max-height: 1500px
+    margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    height:25%;
+    width: 100%;
+    padding: 20px;
+}
+.btn1{
+  position: fixed;
+  top:17%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 28px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  }
+.btn2{
+   position: fixed;
+  top:17%;
+  left: 79%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 28px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 16%;
+   background-color: hsla(9, 100%, 64%, 0.2) ;
+   color: white;
+   text-align: center;
+ }
+ section {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: white;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style the content */
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: white;
+    padding: 10px;
+}
+ 
+
+
+
+</style>
+<head>
+</head>
+</head>
+
+<body >
+     
+    
+
+
+  <div class="w3-content w3-section" style="max-width:100%">
+  <img class="mySlides" src="Hunger1.jpg" style="width:100%">
+   <img class="mySlides" src="b.jpg" style="width:100%">
+    <img class="mySlides" src="c.jpg" style="width:100%">
+    <pre>
+     <p style="font-style:italic;font-size:200%;text-align:center;color:#180336"><b> 1 In Every 9 People On The Planet Are Food Insecure</b></p>     <p style="font-style:verdana;font-size:150%;text-align:center;color:#180336">If you cannot feed hundred people, then just feed one.</p>
+  </pre>
+  <section>
+  <nav>
+    <ul>
+      <img src="mumbai.jpg" alt="location" width="550" height="500"></p>
+    </ul>
+  </nav>
+  
+  <article>
+   
+
+
+
+
+
+   
+    <p2 style="font-style:italic;font-size:180%;text-align:center;color:#180336"><b>
+    Key Facts About Hunger In India.</b></br>
+    </p2>  
+
+
+
+    <p1 style="font-style:italic;font-size:120%;text-align:center;color:#180336">
+         
+    14.5% of our population is undernourished.</br>
+
+    190.7million people go hungry everyday.</br>
+
+    21.0% of children under 5 are underweight.</br>
+
+    38.4% of children under 5 years of age are stunted.</br>
+
+    1 in 4 children malnourished.</br>
+
+    3,000 children in India die every day from poor diet related illness.</br>
+
+    24% of under-five deaths in India.</br>
+
+    30% of neo-natal deaths in India.</br>
+    With over 21 per cent of children wasted-low weight for height.</br>
+     India has been ranked 100th among 119 developing countries on the Global Hunger Index (GHI), behind North Korea, Bangladesh and even Nepal. 
+
+
+    </p1>
+    
+  </article>
+</section>
+
+
+
+
+ 
+ 
+  
+    
+</div>
+  <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="container">
+  <div class="content">
+    <h2 class="a">Penniless</h2>
+   
+    <p>A Step Towards Eradication Of Starvation</p>
+     <button class="btn2">Login</button>
+    <a href ="a.html">
+    <button class="btn1">SignUp</button>
+     </a>
+    <div class="footer">
+
+    <h1> About Us</h1>  
+   </div> 
+
+
+</body>
+
+</html>
